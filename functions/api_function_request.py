@@ -12,6 +12,6 @@ class ApiRequest():
         vault = lastpass.Vault.open_remote(username=user,password=secret)
         for i in vault.accounts:
             print(i.name)
-            if i.name == 'microsoftonline.com':
+            if i.name == 'fixer.io':
                 return i.url,i.password
 
